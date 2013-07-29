@@ -11,9 +11,11 @@ namespace WindsorConvention
             //using (IWindsorContainer container = new WindsorContainer().Install(new AppSettingsConventionInstaller()))
             //using (IWindsorContainer container = new WindsorContainer().Install(new ArrayResolverInstaller()))
             //using (IWindsorContainer container = new WindsorContainer().Install(new LoggingInstaller()))
-            //using (IWindsorContainer container = new WindsorContainer().Install(new JokesInstaller()))
+            //using (IWindsorContainer container = new WindsorContainer().Install(new FacilityInstaller()))
             //using (IWindsorContainer container = new WindsorContainer().Install(new DecoratorInstaller()))
-            using (IWindsorContainer container = new WindsorContainer().Install(new InterceptorInstaller()))
+            //using (IWindsorContainer container = new WindsorContainer().Install(new InterceptorInstaller()))
+            //using (IWindsorContainer container = new WindsorContainer().Install(new FactoryInstaller()))
+            using (IWindsorContainer container = new WindsorContainer().Install(new DelegateFactoryInstaller()))
             {
                 do
                 {

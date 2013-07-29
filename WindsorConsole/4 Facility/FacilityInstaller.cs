@@ -7,7 +7,7 @@ using Castle.Windsor;
 
 namespace WindsorConvention
 {
-    public class JokesInstaller : IWindsorInstaller
+    public class FacilityInstaller : IWindsorInstaller
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
